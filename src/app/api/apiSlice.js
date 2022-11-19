@@ -4,7 +4,7 @@ import { setCredentials } from "../../features/auth/authSlice";
 // Think fetchBaseQuery as axios.
 
 const baseQuery = fetchBaseQuery({
-  baseUrl: "https://dand-repair-shop.vercel.app",
+  baseUrl: "https://dand-repair-shop-backend.vercel.app/",
   credentials: "include",
   prepareHeaders: (headers, { getState }) => {
     const token = getState().auth.token;
